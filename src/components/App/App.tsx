@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
-import './App.css'
+import styles from './App.module.css'
 
 import { Home, About, Dashboard } from 'views'
 
@@ -8,10 +8,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className={styles.module}>
       <Router>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <header className={styles.header}>
+          <img src={logo} className={styles.logo} alt="logo" />
         </header>
 
         <nav>
