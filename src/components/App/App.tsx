@@ -1,19 +1,10 @@
-import React from 'react';
-import logo from '../../assets/images/logo.svg';
-import './App.css';
+import React from 'react'
+import logo from '../../assets/images/logo.svg'
+import './App.css'
 
-import {
-  Home,
-  About,
-  Dashboard,
-} from 'views';
+import { Home, About, Dashboard } from 'views'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 const App: React.FC = () => {
   return (
@@ -50,7 +41,7 @@ const App: React.FC = () => {
         </Switch>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
