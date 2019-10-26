@@ -2,12 +2,14 @@
 import React from 'react'
 import { css, jsx } from '@emotion/core'
 import styled from '@emotion/styled'
+import styles from './Heading.module.scss'
 
 type Props = {
   tag?: string
+  color?: string
 }
 
-const Heading: React.FC<Props> = ({ children, tag }) => {
+const Heading: React.FC<Props> = ({ children, tag, color }) => {
   return (
     <div
       css={css`
@@ -16,12 +18,15 @@ const Heading: React.FC<Props> = ({ children, tag }) => {
     >
       <h2
         css={css`
-          color: blue;
+          color: ${color};
         `}
       >
         {children}
       </h2>
       <StyledHeading>{children}</StyledHeading>
+      <h2 className={styles.heading} style={{ color: `${color}` }}>
+        HEADING with CSS Modules
+      </h2>
     </div>
   )
 }

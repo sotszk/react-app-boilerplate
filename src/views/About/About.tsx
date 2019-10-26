@@ -7,7 +7,7 @@ const About: FC = () => {
     <Wrapper>
       <H1>About</H1>
       <section>
-        <Heading>HEADING</Heading>
+        <Heading color="#f99">HEADING</Heading>
       </section>
     </Wrapper>
   )
