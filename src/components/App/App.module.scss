@@ -1,3 +1,5 @@
+@import 'assets/styles/variables';
+
 .module {
   text-align: center;
 }
@@ -17,11 +19,11 @@
 }
 
 .title {
-  color: #29f;
+  color: $color-light-blue;
 }
 
 .link {
-  color: #09d3ac;
+  color: $color-light-green;
 }
 
 .nav {
