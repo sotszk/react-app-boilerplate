@@ -12,9 +12,10 @@ type Props = {
 const Heading: React.FC<Props> = ({ children, tag, color }) => {
   return (
     <div
-      css={css`
-        font-size: 32px;
-      `}
+      css={css({
+        label: 'heading-container',
+        fontSize: '32px',
+      })}
     >
       <h2
         css={css`
